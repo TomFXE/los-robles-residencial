@@ -36,3 +36,13 @@ body {
 a {
   text-decoration: none;
 }
+
+@media (max-width: 768px) {
+  
+  /* Hacemos que las imágenes de la galería usen todo el ancho 
+     en lugar de 350px fijos, para que se apilen verticalmente. */
+  #galeria img {
+    width: 90% !important; /* !important para sobreescribir el estilo en línea */
+    height: auto !important;
+  }
+}
