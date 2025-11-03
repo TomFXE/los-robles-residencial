@@ -1,34 +1,21 @@
-// src/components/Footer.jsx (Después)
+// src/components/Footer.jsx (MODIFICADO)
+
 import React from 'react';
 
 export default function Footer() {
-  const styles = {
-    footer: {
-      backgroundColor: '#2c3e50',
-      color: 'white',
-      textAlign: 'center',
-      padding: '30px',
-      marginTop: '40px'
-    },
-    // NUEVO ESTILO
-    socials: {
-      marginTop: '15px'
-    },
-    // NUEVO ESTILO
-    socialLink: {
-      color: 'white',
-      textDecoration: 'none',
-      margin: '0 10px'
-    }
-  };
+
+  // --- CAMBIOS DE SPRINT 3 ---
+  // 'const styles = {}' ha sido eliminado.
+  // Los estilos se movieron a App.css
+  // --- FIN DE CAMBIOS ---
 
   return (
-    <footer style={styles.footer}>
-      {/* SECCIÓN AÑADIDA */}
-      <div style={styles.socials}>
-        <a href="#" style={styles.socialLink}>Facebook</a>
-        <a href="#" style={styles.socialLink}>Instagram</a>
-        <a href="#" style={styles.socialLink}>Twitter</a>
+    // Usamos 'className'
+    <footer className="footer-main">
+      <div className="footer-socials">
+        <a href="#" className="footer-social-link">Facebook</a>
+        <a href="#" className="footer-social-link">Instagram</a>
+        <a href="#" className="footer-social-link">Twitter</a>
       </div>
       
       <p>© 2025 Los Robles Residencial. Todos los derechos reservados.</p>
